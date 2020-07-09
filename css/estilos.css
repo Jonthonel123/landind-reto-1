@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:ital,wght@0,500;0,700;1,400&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+:root {
+    --vietnam: "Be Vietnam", sans-serif;
+    --ancho: 1440px;
+    /* color primarios */
+    --naranja: hsl(12, 88%, 59%);
+    --azul-oscuro: hsl(228, 39%, 23%);
+    --plomo-claro: hsl(0, 0%, 98%);
+    --azul-claro: hsl(227, 12%, 61%);
+}
+
+body {
+    font-family: var(--vietnam);
+}
+
+.btn__started {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn__started-left {
+    justify-content: flex-start;
+}
+
+.btn__started>button {
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--naranja);
+    color: var(--plomo-claro);
+    box-shadow: var(--naranja) 0px 4px 10px;
+}
+
+
+/* HEADER */
+
+.header {
+    max-width: var(--ancho);
+    display: flex;
+    margin-top: 30px;
+    height: 60px;
+}
+
+
+/* logo de la empresa       ----HEADER----- */
+
+.header__logo {
+    width: 200px;
+    margin: auto 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* navegador       ----HEADER----- */
+
+.header__nav {
+    flex: 1;
+    display: flex;
+}
+
+.header__lista {
+    list-style: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__item {
+    margin: 0 20px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: var(--azul-oscuro);
+    font-weight: 700;
+}
+
+
+/* botom        ----HEADER------*/
+
+
+/* ----------------FIN DE HEADER------- */
+
+
+/* --------------MAIN--------- */
+
+main {
+    max-width: var(--ancho);
+    display: flex;
+    margin: 120px auto 0 auto;
+    flex-wrap: wrap;
+}
+
+main section {
+    width: 50%;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.section1>* {
+    margin-bottom: 40px;
+}
+
+.section1__titulo {
+    color: var(--azul-oscuro);
+    font-size: 4rem;
+    line-height: 4.2rem;
+}
+
+.section1__parrafo {
+    color: var(--azul-claro);
+    width: 50%;
+}
+
+.section1__btn {}
+
+
+/* --------------MAIN FIN--------- */
